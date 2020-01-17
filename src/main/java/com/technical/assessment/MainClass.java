@@ -12,7 +12,8 @@ public class MainClass {
 	public static void main(String[] args) {
 
 		solution_A_1();
-		
+		solution_A_2();
+
 
 		solution_B_1_and_2();
 		solution_B_3();
@@ -43,6 +44,35 @@ public class MainClass {
 		}
 	}
 
+	public static void solution_A_2() {
+		// Duck
+		////////
+		System.out.println("\n");
+		System.out.println("--Duck--");
+
+		Collection<Duck> duck = new ArrayList<Duck>();
+		duck.add(new Duck("Quack, quack"));
+		for (Duck d : duck) {
+			d.say();
+			d.swim();
+			d.fly();
+			d.walk();
+			d.sing();
+		}
+
+		// Chicken
+		////////
+		System.out.println("\n");
+		System.out.println("--Chicken--");
+		Collection<Chicken> chicken = new ArrayList<Chicken>();
+		chicken.add(new Chicken("Cluck, cluck"));
+		for (Chicken c : chicken) {
+			c.say();
+			c.walk();
+			c.sing();
+		}
+
+	}
 	
 	public static void solution_B_1_and_2() {
 		// Fieshes
