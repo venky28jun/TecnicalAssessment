@@ -14,6 +14,7 @@ public class MainClass {
 		solution_A_1();
 		solution_A_2();
 		solution_A_3();
+		solution_A_4();
 
 
 		solution_B_1_and_2();
@@ -87,6 +88,26 @@ public class MainClass {
 			r.say();
 			r.walk();
 			r.sing();
+		}
+	}
+	
+	public static void solution_A_4() {
+		// Parrots
+		////////
+		System.out.println("\n");
+		System.out.println("--Parrots--");
+		Collection<Parrot> parrots = new ArrayList<Parrot>();
+		parrots.add(new Parrot("living with dogs I says", "Woof, woof"));
+		parrots.add(new Parrot("living with cats I says", "Meow"));
+		parrots.add(new Parrot(" living near the rooster I says", "Cock-a-doodle-doo"));
+
+		for (Parrot p : parrots) {
+			p.walk();
+			p.fly();
+			p.sing();
+			p.swim();
+			p.say();
+			System.out.println(".....");
 		}
 	}
 	
