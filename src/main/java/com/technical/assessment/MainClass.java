@@ -13,6 +13,7 @@ public class MainClass {
 
 		solution_A_1();
 		solution_A_2();
+		solution_A_3();
 
 
 		solution_B_1_and_2();
@@ -72,6 +73,21 @@ public class MainClass {
 			c.sing();
 		}
 
+	}
+	
+	public static void solution_A_3() {
+		// Rooster
+		////////
+		System.out.println("\n");
+		System.out.println("--Rooster--");
+		Collection<Rooster> rooster = new ArrayList<Rooster>();
+		rooster.add(new Rooster("Cock-a-doodle-doo"));
+		rooster.add(new Rooster(LANGUAGE.Swedish));
+		for (Rooster r : rooster) {
+			r.say();
+			r.walk();
+			r.sing();
+		}
 	}
 	
 	public static void solution_B_1_and_2() {
